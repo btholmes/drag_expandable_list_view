@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Testing the main activity"
+        />
+
+    <com.example.drag_expandable_list_view.DragSortListView.DragSortListView
+        android:id="@+id/drag_sort_list_view"
+        style="@style/SimpleListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        dslv:drag_start_mode="onDown"
+        dslv:drag_handle_id="@+id/icon_right"
+        android:divider="@color/colorAccent"/>
+
+</android.support.design.widget.CoordinatorLayout>
